@@ -16,7 +16,7 @@ print(a)
 c={123,124,125,126,127}
 d={98,99,100,123,124,126}
 z=c.union(d)
-print
+print(z)
 e=c.intersection(d)
 print(e)
 f=c.difference(d)
