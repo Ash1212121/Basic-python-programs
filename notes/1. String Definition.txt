@@ -1,0 +1,181 @@
+ 1. String Definition
+String (str): A sequence of characters enclosed in quotes (' ' or " ").
+
+python
+Copy
+Edit
+x = "python is a programming language"
+This assigns a string to variable x.
+
+✅ 2. print() Function
+Displays output.
+
+python
+Copy
+Edit
+print(x)
+✅ 3. type() Function
+Returns the type of the variable.
+
+python
+Copy
+Edit
+print(type(x))   # Output: <class 'str'>
+✅ 4. len() Function
+Returns the length (number of characters) in the string.
+
+python
+Copy
+Edit
+print(len(x))   # Output: 33
+✅ 5. String Indexing
+Each character in a string has a position (index), starting from 0.
+
+python
+Copy
+Edit
+print(x[19])    # Output: 'g' (20th character)
+🧾 Indexing: Accessing a single character using x[index]
+
+✅ 6. String Slicing
+Used to extract a part (substring) from the string.
+
+python
+Copy
+Edit
+print(x[4:31])    # Characters from index 4 to 30
+print(x[17:])     # From index 17 to end
+print(x[:30])     # From beginning to index 29
+🧾 Syntax: x[start:end]
+Note: end is excluded.
+
+✅ 7. Negative Indexing
+Indexes from the end of the string.
+
+python
+Copy
+Edit
+print(x[-1])       # Last character: 'e'
+print(x[-10:-2])   # Substring using negative indexes
+print(x[-10:])     # Last 10 characters
+print(x[:-2])      # Entire string except last 2 chars
+✅ 8. Membership Operators: in, not in
+Used to check if a substring exists in a string.
+
+python
+Copy
+Edit
+print("is" in x)        # True – 'is' is present
+print("no" in x)        # False – 'no' not found
+print("is" not in x)    # False
+print("amal" not in x)  # True – 'amal' not in string
+
+
+📝 Summary of Topics and Definitions
+Topic	Definition
+String	Sequence of characters enclosed in quotes
+print()	Displays the output
+type()	Shows the data type of a variable
+len()	Returns the number of characters in a string
+
+Indexing	        Accessing a specific character using its position
+Slicing	                Getting part of a string using start:end format
+Negative Indexing	Accessing characters from the end (e.g., -1 is the last character)
+Membership (in)  	Checks if a substring exists in the string
+Membership (not in)	Checks if a substring does not exist in the string
+
+✅ Example Output (Based on Your Code)
+python
+Copy
+Edit
+x = "python is a programming language"
+
+print(x)             # python is a programming language
+print(type(x))       # <class 'str'>
+print(len(x))        # 33
+print(x[19])         # g
+print(x[4:31])       # on is a programming langu
+print(x[17:])        # mming language
+print(x[:30])        # pyth is a programming languag
+print(x[-1])         # e
+print(x[-10:-2])     # g langu
+print(x[-10:])       # g language
+print(x[:-2])        # python is a programming languag
+print("is" in x)     # True
+print("no" in x)     # False
+print("is" not in x) # False
+print("amal" not in x)# True
+Would you like this organized into a 1-page study note or PDF for quick revision?
+
+
+
+
+
+
+
+You said:
+for i in x:
+    print(i),for what it is used
+
+
+ChatGPT said:
+Great question!
+
+✅ Code:
+python
+Copy
+Edit
+for i in x:
+    print(i)
+🧠 Explanation & Purpose:
+🔁 for i in x:
+This is a for loop used to iterate through each character in the string x.
+
+x is a string: "python is a programming language"
+
+The loop goes through each character one by one.
+
+i takes the value of each character during every iteration.
+
+🖨️ print(i)
+This prints each character of the string x on a new line.
+
+📝 What is it used for?
+✅ It is used to iterate through a string, character by character.
+
+📌 Output:
+css
+Copy
+Edit
+p
+y
+t
+h
+o
+n
+ 
+i
+s
+ 
+a
+ 
+p
+r
+o
+g
+r
+a
+m
+m
+i
+n
+g
+ 
+l
+a
+n
+g
+u
+a
+g
+e

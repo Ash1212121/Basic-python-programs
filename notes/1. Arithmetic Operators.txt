@@ -1,0 +1,87 @@
+ 1. Arithmetic Operators
+Used to perform mathematical operations.
+
+Operator    Description 	Example Result
++	       Addition	        2 + 3     5
+-	    Subtraction	        5 - 2	  3
+*	 Multiplication	        4 * 3	  12
+/	    Division	       10 / 2    5.0
+//	 Floor Division	       7 // 2	  3
+%	 Modulus (Remainder)    7 % 2	  1
+**	 Exponent (Power)       2 ** 3	  8
+
+✅ 2. Assignment Operator
+Used to assign values to variables.
+
+Operator	Description	Example
+  =	      Assign value	a = 5
+
+✅ 3. Arithmetic Assignment Operators
+Combines arithmetic and assignment.
+
+Operator	Example	Equivalent To
+ +=	        a += 3	a = a + 3
+-=	        a -= 2	a = a - 2
+*=	        a *= 2	a = a * 2
+/=	        a /= 2	a = a / 2
+//=	       a //= 2	a = a // 2
+%=	       a %= 2	a = a % 2
+**=	       a **= 3	a = a ** 3
+
+✅ 4. Comparison (Relational) Operators
+Used to compare values. Returns True or False.
+
+Operator	Description	Example	Result
+==	        Equal to	5 == 5	True
+!=	        Not equal to	5 != 3	True
+<	       Less than	2 < 5	True
+<=	     Less than or equal	3 <= 3	True
+>	    Greater than	4 > 2	True
+>=	Greater than or equal	6 >= 3	True
+
+✅ 5. Logical Operators
+Used to combine conditional statements.
+
+Operator	     Description	Example	               Result
+and	    True if both are true 	(5 > 2 and 3 < 4)	True
+or	True if at least one is true	(5 > 2 or 3 > 5)	True
+not	      Negates the result	not(5 > 2)	        False
+
+✅ 6. Membership Operators
+Used to test if a value is in a sequence (like a string, list, etc.)
+
+Operator	Description	           Example	                 Result
+in	True if value exists	        'a' in 'apple'	                 True
+not in	True if value does not exist	'z' not in 'apple'	         True
+
+✅ 7. Identity Operators
+Compare the memory location of two objects.
+
+Operator	Description	                Example	                     Result
+is	  True if both refer to same object	a is b	             True if a and b are same object
+is not	  True if they are not same object	a is not b	     True
+
+💡 a = [1,2]; b = a → a is b is True. 
+   But a = [1,2]; b = [1,2] → a is b is False (though values are same, they are different objects).
+
+
+✅ 8. Bitwise Operators
+Works at the binary level (bit-by-bit).
+
+Operator	Description	Example	                              Result
+&	          AND	        5 & 3 → 0101 & 0011 = 0001 = 1	
+`	`	  OR	        `                                       5
+~	          NOT	        ~5 = -6 (inverts bits)	
+^	  XOR (exclusive OR)	5 ^ 3 → 0101 ^ 0011 = 0110 = 6	
+
+
+✅ Mini Summary Table
+Category	                 Examples
+Arithmetic	               +, -, *, /, //, %, **
+Assignment	                  =
+Arithmetic Assignment	       +=, -=, *=, /=, //=, %=, **=
+Comparison	               ==, !=, <, >, <=, >=
+Logical	                       and, or, not
+Membership	               in, not in
+Identity	               is, is not
+Bitwise                  	&, `

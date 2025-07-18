@@ -1,0 +1,91 @@
+1. Variables and Data Types
+Variable: A named memory location used to store data.
+Example: x = 12, y = 2.34, z = 3 + 4j
+
+Integer (int): Whole numbers without decimals.
+Example: x = 12 → int
+
+Float (float): Numbers with decimal points.
+Example: y = 2.34 → float
+
+Complex (complex): Numbers with a real and imaginary part.
+Example: z = 3 + 4j → complex
+
+3. type() Function
+Used to check the data type of a variable.
+Example:
+
+python
+Copy
+Edit
+print(type(x))  # Output: <class 'int'>
+✅ 4. Type Conversion (Type Casting)
+Type conversion means converting the value of one data type to another.
+
+a. int to float
+python
+Copy
+Edit
+a = float(x)
+Converts x = 12 (int) to 12.0 (float).
+
+b. float to int
+python
+Copy
+Edit
+b = int(y)
+Converts y = 2.34 (float) to 2 (int) — decimal part is truncated.
+
+c. int to complex
+python
+Copy
+Edit
+c = complex(x)
+Converts x = 12 to 12+0j (complex number).
+
+d. float to complex
+python
+Copy
+Edit
+d = complex(y)
+Converts y = 2.34 to 2.34+0j (complex number).
+
+
+✅ Full Code with Output Comments
+python
+Copy
+Edit
+x = 12
+y = 2.34
+z = 3 + 4j
+
+print(x, y, z)        # Output: 12 2.34 (3+4j)
+print(type(x))        # Output: <class 'int'>
+print(type(y))        # Output: <class 'float'>
+print(type(z))        # Output: <class 'complex'>
+
+a = float(x)
+print(a)              # Output: 12.0
+print(type(a))        # Output: <class 'float'>
+
+b = int(y)
+print(b)              # Output: 2
+print(type(b))        # Output: <class 'int'>
+
+c = complex(x)
+print(c)              # Output: (12+0j)
+print(type(c))        # Output: <class 'complex'>
+
+d = complex(y)
+print(d)              # Output: (2.34+0j)
+print(type(d))        # Output: <class 'complex'>
+
+
+Summary of Topics:
+Topic	Explanation
+Variables	Used to store values
+Data Types	int, float, complex
+print()	        Displays output on screen
+type()	        Returns the type of variable
+Type Conversion
+ (Casting)	Changes value from one data type to another
